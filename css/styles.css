@@ -16,3 +16,70 @@ h2 {
 }
 
 
+section {
+  margin: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.peliculas {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr); 
+  gap: 15px; 
+  justify-items: center; 
+}
+
+
+.pelicula {
+  width: 100%; 
+  max-width: 120px; 
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.pelicula img {
+  width: 100%; 
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+
+.pelicula h3 {
+  font-size: 14px;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+@media (max-width: 1200px) {
+  .peliculas {
+    grid-template-columns: repeat(7, 1fr); 
+  }
+}
+
+@media (max-width: 900px) {
+  .peliculas {
+    grid-template-columns: repeat(5, 1fr); 
+  }
+}
+
+@media (max-width: 600px) {
+  .peliculas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .peliculas {
+    grid-template-columns: 1fr; 
+  }
+}
+
